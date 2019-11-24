@@ -1,0 +1,32 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap"
+  rel="stylesheet"
+/>
+<br />
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn-info btn-lg">Sample</button>
+&nbsp; &nbsp;
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn-danger btn-lg">불러오기</button>
+&nbsp; &nbsp;
+<button type="button" class="btn-success btn-lg">시간표 생성</button>
+<br />
+<br />
+<br />
+<table mdbTable bordered="true">
+  <thead>
+    <tr>
+      <th *ngFor="let head of headElements" scope="col">{{ head }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let el of elements">
+      <th scope="row">{{ el.id }}</th>
+      <td>{{ el.first }}</td>
+      <td>{{ el.second }}</td>
+      <td>{{ el.third }}</td>
+      <td>{{ el.last }}</td>
+      <td>{{ el.handle }}</td>
+    </tr>
+  </tbody>
+</table>
