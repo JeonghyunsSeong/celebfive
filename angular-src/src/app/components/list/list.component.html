@@ -1,0 +1,17 @@
+<h2 class="page-header">시간표</h2>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>

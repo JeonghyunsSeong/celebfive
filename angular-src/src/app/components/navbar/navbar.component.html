@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">CelebFive</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+      <li *ngIf="checkLoggedIn()" class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Notice
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="school.html">School Food</a>
+          <a class="dropdown-item" href="bus.html">Shuttle Bus</a>
+          <a class="dropdown-item" href="library.html">Library</a>
+        </div>
+      </li>
+      <li *ngIf="checkLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/list">Timetable</a>
+      </li>
+
+      <li *ngIf="checkLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/list">Board</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li *ngIf="!checkLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/login">Login</a>
+      </li>
+      <li *ngIf="!checkLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/register">Register</a>
+      </li>
+      <li *ngIf="checkLoggedIn()" class="nav-item">
+        <a class="nav-link" (click)="onLogoutClick()" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>

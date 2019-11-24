@@ -1,0 +1,119 @@
+<div id="login-page" class="row" style="width: 50%;">
+  <div class="col s12 z-depth-4 card-panel">
+    <h3 class="page-header" style="text-align: center;">
+      <a href="/">Celeb5</a>
+    </h3>
+    <br />
+    <div>
+      <form
+        (ngSubmit)="onRegisterSubmit()"
+        style="padding-top:10px; padding-left:10px; padding-right:10px; padding-bottom:10px;"
+      >
+        <!-- 아이디 -->
+        <div class="row margin">
+          <div class="input-field col s12" style="padding-top:6px">
+            <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
+            <i class="material-icons prefix">account_circle</i>
+            <input
+              type="text"
+              id="name"
+              [(ngModel)]="name"
+              name="name"
+              placeholder="아이디"
+            />
+          </div>
+        </div>
+
+        <!-- 이름 -->
+        <div class="row margin">
+          <div class="input-field col s12" style="padding-top:6px">
+            <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
+            <i class="material-icons prefix">account_circle</i>
+            <input
+              type="text"
+              id="username"
+              [(ngModel)]="username"
+              name="username"
+              placeholder="이름"
+            />
+          </div>
+        </div>
+
+        <!-- 이메일 -->
+        <div class="row margin">
+          <div class="input-field col s12" style="padding-top:6px">
+            <!-- <i class="mdi-social-person-outline prefix 아이콘"></i> -->
+            <i class="material-icons prefix">email</i>
+            <input
+              type="text"
+              id="email"
+              [(ngModel)]="email"
+              name="email"
+              style="cursor: auto;"
+              placeholder="이메일"
+            />
+          </div>
+        </div>
+
+        <!-- 핸드폰 -->
+        <div class="row margin">
+          <div class="input-field col s12" style="padding-top:6px">
+            <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
+            <i class="material-icons prefix">phone</i>
+            <input
+              type="text"
+              id="phone"
+              [(ngModel)]="phone"
+              name="phone"
+              placeholder="핸드폰번호"
+            />
+          </div>
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="row margin">
+          <div class="input-field col s12" style="padding-top:6px">
+            <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
+            <i class="material-icons prefix">vpn_key</i>
+            <input
+              type="password"
+              id="password"
+              [(ngModel)]="password"
+              name="password"
+              placeholder="비밀번호"
+            />
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <form action="#">
+            <p>
+              <label style="padding-left:5px;">
+                <input id="indeterminate-checkbox" type="checkbox" />
+                <span style="padding-left:30px;"
+                  ><a href="#">이용약관</a>에 동의합니다.</span
+                >
+              </label>
+            </p>
+          </form>
+        </div>
+
+        <div class="row" style="text-align: center;">
+          <div class="input-field col s12">
+            <button
+              type="submit"
+              id="#"
+              class="btn waves-effect waves-light black"
+            >
+              회원가입 <i class="fa fa-check spaceLeft"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<address style="text-align: center;">
+  Copyright © 2019 (Celeb5) All rights reserved.
+</address>
