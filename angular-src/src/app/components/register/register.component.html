@@ -1,26 +1,21 @@
-<div id="login-page" class="row" style="width: 50%;">
+<!-- Compiled and minified CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Font-->
+<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+
+<div id="login-page" class="row" style="width: 50%; padding-top:50px">
   <div class="col s12 z-depth-4 card-panel">
-    <h3 class="page-header" style="text-align: center;">
-      <a href="/">Celeb5</a>
+    <h3 class="page-header" style="text-align: center; padding-top:30px">
+      <a style="font-family: 'Gugi', cursive; font-size: 60px;" href="/">Celeb5</a>
     </h3>
-    <br />
     <div>
-      <form
-        (ngSubmit)="onRegisterSubmit()"
-        style="padding-top:10px; padding-left:10px; padding-right:10px; padding-bottom:10px;"
-      >
+      <form (ngSubmit)="onRegisterSubmit()" style="padding-left:10px; padding-right:10px;">
         <!-- 아이디 -->
         <div class="row margin">
           <div class="input-field col s12" style="padding-top:6px">
             <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
             <i class="material-icons prefix">account_circle</i>
-            <input
-              type="text"
-              id="name"
-              [(ngModel)]="name"
-              name="name"
-              placeholder="아이디"
-            />
+            <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="아이디" />
           </div>
         </div>
 
@@ -29,13 +24,7 @@
           <div class="input-field col s12" style="padding-top:6px">
             <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
             <i class="material-icons prefix">account_circle</i>
-            <input
-              type="text"
-              id="username"
-              [(ngModel)]="username"
-              name="username"
-              placeholder="이름"
-            />
+            <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="이름" />
           </div>
         </div>
 
@@ -44,14 +33,7 @@
           <div class="input-field col s12" style="padding-top:6px">
             <!-- <i class="mdi-social-person-outline prefix 아이콘"></i> -->
             <i class="material-icons prefix">email</i>
-            <input
-              type="text"
-              id="email"
-              [(ngModel)]="email"
-              name="email"
-              style="cursor: auto;"
-              placeholder="이메일"
-            />
+            <input type="text" id="email" [(ngModel)]="email" name="email" style="cursor: auto;" placeholder="이메일" />
           </div>
         </div>
 
@@ -60,13 +42,7 @@
           <div class="input-field col s12" style="padding-top:6px">
             <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
             <i class="material-icons prefix">phone</i>
-            <input
-              type="text"
-              id="phone"
-              [(ngModel)]="phone"
-              name="phone"
-              placeholder="핸드폰번호"
-            />
+            <input type="text" id="phone" [(ngModel)]="phone" name="phone" placeholder="핸드폰번호" />
           </div>
         </div>
 
@@ -75,24 +51,16 @@
           <div class="input-field col s12" style="padding-top:6px">
             <!-- <i class="mdi-social-person-outline prefix 아이콘  "></i> -->
             <i class="material-icons prefix">vpn_key</i>
-            <input
-              type="password"
-              id="password"
-              [(ngModel)]="password"
-              name="password"
-              placeholder="비밀번호"
-            />
+            <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="비밀번호" />
           </div>
         </div>
 
-        <div style="text-align: center;">
+        <div style="text-align: center; margin-top: 10px;">
           <form action="#">
             <p>
               <label style="padding-left:5px;">
                 <input id="indeterminate-checkbox" type="checkbox" />
-                <span style="padding-left:30px;"
-                  ><a href="#">이용약관</a>에 동의합니다.</span
-                >
+                <span style="padding-left:30px;"><a href="#">이용약관</a>에 동의합니다.</span>
               </label>
             </p>
           </form>
@@ -100,12 +68,8 @@
 
         <div class="row" style="text-align: center;">
           <div class="input-field col s12">
-            <button
-              type="submit"
-              id="#"
-              class="btn waves-effect waves-light black"
-            >
-              회원가입 <i class="fa fa-check spaceLeft"></i>
+            <button type="submit" id="#" class="btn waves-effect waves-light black">
+              회원가입
             </button>
           </div>
         </div>
@@ -114,6 +78,14 @@
   </div>
 </div>
 
-<address style="text-align: center;">
-  Copyright © 2019 (Celeb5) All rights reserved.
-</address>
+<div class="container">
+  <div id="top" style="height: 30px;">
+    <div style="font-family: 'Gugi', cursive; text-align: center;">Copyright © 2019 (KSI) All rights reserved.
+    </div>
+  </div>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
